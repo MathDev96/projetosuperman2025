@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+  
+*{
+    background-color: rgb(10, 33, 245);
+  
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+nav{
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: red;
+}
+#logo{
+    width: 150px;
+    height: auto;
+}
+#banner{
+    background-color: rgb(10, 9, 9);
+    background-image: url('./superman-supergirl-dc-comics-removebg.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    box-shadow: inset 0 0 30px 0 rgb(9, 10, 12), 0 0 50px 0 rgb(8, 8, 14);
+    text-shadow: 0px 0 5px rgb(8, 9, 12), 0 0 5px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.trailer{
+    width: 60%;
+    border-radius: 5px;
+}
+#sinopse{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.description{
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 150%;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color:#fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    box-shadow: inset 0 0 30px 0 #ff0000, 0 0 50px 0 #ff0000;
+    text-shadow: 0 0 5px rgba(211, 18, 18, 0.747), 0 0 5px;
+}
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 90%;
+    display: flex;
+    justify-items: center;
+    margin-top: 40px;
+    row-gap: 10px;
+    column-gap: 30px;
+    
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+.card:hover{
+transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('./david-corenswet-novo-superman-2.jpeg');
+}
+.banner-2 {
+    background-image: url('./LoisLlane.webp');
+}    
+.banner-3 {
+    background-image: url('./LexLuthor.jpeg');
+}
+.banner-4 {
+    background-image: url('./Supergirl.webp');
+}
+footer{
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media(max-width: 768px)
+{
+.footer-navigation{
+    display: block;
+}
+nav{
+    display: none;
+    margin-right: 20%;
+}
+#banner{
+background-position: 50%;
+height: 390px
+}
+#trailer-container{
+    width: 105%;
+    height: 430px;
+    display: grid;
+    grid-template-columns: 100%;
+    border-radius: 5px;
+}
+.content{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.trailer{
+    width: 100%; 
+    
+}
+#sinopse{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.description{
+    width: 100%;
+}
+.button{
+    width: 95%;
+    margin-top: 30px;
+}
+.actor-cards-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 250px;
+    width: 100%;
+}
+
+}
