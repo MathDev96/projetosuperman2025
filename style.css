@@ -38,7 +38,7 @@ li:hover {
 }
 #banner{
     background-color: rgb(10, 9, 9);
-    background-image: url('./superman-supergirl-dc-comics-removebg.png');
+    background-image: url('./assets/superman-supergirl-dc-comics-removebg.png');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -141,16 +141,16 @@ transform: scale(1.02);
 }
 
 .banner-1 {
-    background-image: url('./david-corenswet-novo-superman-2.jpeg');
+    background-image: url('./assets/david-corenswet-novo-superman-2.jpeg');
 }
 .banner-2 {
-    background-image: url('./LoisLlane.webp');
+    background-image: url('./assets/LoisLlane.webp');
 }    
 .banner-3 {
-    background-image: url('./LexLuthor.jpeg');
+    background-image: url('./assets/LexLuthor.jpeg');
 }
 .banner-4 {
-    background-image: url('./Supergirl.webp');
+    background-image: url('./assets/Supergirl.webp');
 }
 footer{
     height: 300px;
